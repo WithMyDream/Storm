@@ -39,8 +39,8 @@ cc.Class({
 
     // update (dt) {},
 
-    onTouchGo : function (eventType, customData) {
-        cc.log("onTouchGO");
-        
+    onTouchGo(eventType, customData) {
+        cc.log("onTouchGo");
+        cc.director.loadScene("GameScene");
     }
 });
